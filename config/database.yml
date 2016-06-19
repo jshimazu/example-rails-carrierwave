@@ -6,10 +6,10 @@
 #
 default: &default
   adapter: mysql2
-  username: 'root'
-  password: ''
-  database: 'carrierwavetest'
-  encoding: utf8mb4
+  username: <%= ENV['MYSQL_USER'] %>
+  password: <%= ENV['MYSQL_PASS'] %>
+  database: <%= ENV['MYSQL_DBNAME'] %>
+  encoding: <%= ENV['MYSQL_CHARSET'] %>
   #reconnect: true
   pool: 5
   timeout: 5000

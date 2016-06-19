@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
-
+gem 'dotenv-rails'
+gem 'fog'
 gem 'mysql2'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
